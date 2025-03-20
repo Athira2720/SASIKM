@@ -1,0 +1,107 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #e0f2f1, #ccff90); /* Soft gradient background */
+  background-size: cover;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  width: 90%;
+  max-width: 450px;
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+h1 {
+  color: #e74c3c;
+  font-size: 28px;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+p {
+  color: #333;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.patient-photo-container {
+  margin-bottom: 30px;
+}
+
+.patient-photo {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  margin: 0 auto;
+  display: block;
+  object-fit: cover;
+  border: 3px solid #e0f2f1;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.qr-code {
+  width: 180px;
+  height: 180px;
+  margin: 10px auto;
+  display: block;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.payment-options {
+  margin-bottom: 30px;
+}
+
+.option {
+  margin-bottom: 25px;
+}
+
+button {
+  background-color: #2ecc71;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+  background-color: #27ae60;
+  transform: translateY(-2px);
+}
+
+.social-sharing a {
+  display: inline-block;
+  margin: 8px;
+  padding: 12px 24px;
+  background-color: #3498db;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.social-sharing a:hover {
+  background-color: #2980b9;
+  transform: translateY(-2px);
+}

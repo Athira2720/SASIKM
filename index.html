@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ചികിത്സാ സഹായ നിധി</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="card">
+    <!-- Header -->
+    <h1>ചികിത്സാ സഹായ നിധി</h1>
+    <p>
+      ഒന്നിൽ കൂടുതൽ അവയവങ്ങൾ പ്രവർത്തനരഹിതമായ അവസ്ഥയിൽ (MODS) ഊന്നുകൽ നമ്പൂരി കൂപ്പ് സ്വദേശി ശ്രീ. ശശി KM കോലഞ്ചേരി മെഡിക്കൽ കോളേജിൽ തീവ്രപരിചരണ വിഭാഗത്തിൽ വെൻ്റിലേറ്റർ സഹായത്തോടെ ചികിത്സയിലാണ്. ഹീമോ ഡയാലിസിനും നിത്യ ചികിത്സക്കുമായ നല്ലൊരു തുക ദിവസവും ആവശ്യമുണ്ട്. ഈ അവസ്ഥയിൽ ഈ കുടുംബത്തിനു നിങ്ങളുടെ സഹായഹസ്തം ആവശ്യമുണ്ട്. അദ്ദേഹത്തെ ജീവിതത്തിലേക്ക് തിരികെ എത്തിക്കുവാൻ നിങ്ങളുടെ അകമഴിഞ്ഞ സാമ്പത്തിക സഹായം താഴെ കൊടുത്തിരിക്കുന്ന ബാങ്ക് അക്കൗണ്ടിലേക്ക് കൊടുക്കണമെന്ന് അപേക്ഷിക്കുന്നു.
+    </p>
+
+    <!-- Patient Photo -->
+    <div class="patient-photo-container">
+      <img src="patient-photo.jpg" alt="Patient Photo" class="patient-photo">
+    </div>
+
+    <!-- Payment Options -->
+    <div class="payment-options">
+      <h2>Payment Methods</h2>
+
+      <!-- QR Code Section -->
+      <div class="option">
+        <img 
+          src="qr-code.png" 
+          alt="QR Code" 
+          class="qr-code" 
+          onclick="redirectToUPI('aryanoop199@okicici')"
+        >
+        <p>Scan this QR Code or tap to donate via UPI.</p>
+      </div>
+
+      <!-- UPI Payment -->
+      <div class="option">
+        <button onclick="redirectToUPI('aryanoop199@okicici')">Pay via UPI</button>
+        <p>UPI ID: <a href="#" onclick="redirectToUPI('aryanoop199@okicici')">aryanoop199@okicici</a></p>
+      </div>
+
+      <!-- Bank Transfer -->
+      <div class="option">
+        <button onclick="copyBankDetails()">Copy Account Details</button>
+        <p id="bank-details">
+          <strong>Bank:</strong> IDBI Bank<br>
+          <strong>Account Number:</strong> 0754104000168540<br>
+          <strong>IFSC Code:</strong> IBKL0000754<br>
+          <strong>Branch:</strong> Kothamangalam
+        </p>
+      </div>
+
+      <!-- Call Option -->
+      <div class="option">
+        <button onclick="callLathika()">Call Lathika Sasi</button>
+        <p>Phone: <a href="#" onclick="redirectToUPI('+919496575109')">+91 9496575109</a></p>
+      </div>
+    </div>
+
+    <!-- Social Sharing Section -->
+    <div class="social-sharing">
+      <h2>Share This Campaign</h2>
+      <a 
+        href="https://api.whatsapp.com/send?text=Donate%20to%20Sasi%20KM%27s%20treatment%20fund:%20https://athira2720.github.io/SASIKM/" 
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        WhatsApp
+      </a>
+      <a 
+        href="https://www.facebook.com/sharer/sharer.php?u=https://athira2720.github.io/SASIKM/" 
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Facebook
+      
+      </a>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
